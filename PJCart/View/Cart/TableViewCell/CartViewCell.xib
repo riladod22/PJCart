@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="8W3-TT-0x7" customClass="CartViewCell" customModule="PJCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8W3-TT-0x7" id="Wjb-Uf-hI7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YAV-kd-nbL">
+                        <rect key="frame" x="8" y="8" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ea3-xT-Ie1"/>
+                            <constraint firstAttribute="height" constant="80" id="joM-lN-47Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-5N-8ju">
+                        <rect key="frame" x="96" y="16" width="278" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-wn-rNA">
+                        <rect key="frame" x="378" y="8" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="C8t-HU-U0C"/>
+                            <constraint firstAttribute="width" constant="32" id="JZF-q3-eHd"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="close.png"/>
+                        <connections>
+                            <action selector="BtnRemoveClicked:" destination="8W3-TT-0x7" eventType="touchUpInside" id="dPR-yj-RPx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-vY-4fJ">
+                        <rect key="frame" x="8" y="96" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="FPh-Zn-4sw"/>
+                            <constraint firstAttribute="height" constant="32" id="f7F-lh-ufj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="−"/>
+                        <connections>
+                            <action selector="BtnDicountClicked:" destination="8W3-TT-0x7" eventType="touchUpInside" id="I1W-Rh-a3G"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="99" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESL-xZ-ng4">
+                        <rect key="frame" x="44" y="95" width="46" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="dMC-1A-bF2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TP-w3-JvQ">
+                        <rect key="frame" x="94" y="96" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="3Gs-GD-1is"/>
+                            <constraint firstAttribute="height" constant="32" id="VxU-7t-7bc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="＋"/>
+                        <connections>
+                            <action selector="BtnAddClicked:" destination="8W3-TT-0x7" eventType="touchUpInside" id="87D-Ee-XTC"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyb-OV-NJY">
+                        <rect key="frame" x="282" y="86" width="43" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ESL-xZ-ng4" firstAttribute="top" secondItem="fgI-vY-4fJ" secondAttribute="bottom" constant="-33" id="7tv-hd-ezJ"/>
+                    <constraint firstItem="ESL-xZ-ng4" firstAttribute="leading" secondItem="fgI-vY-4fJ" secondAttribute="trailing" constant="4" id="BL3-jp-C7A"/>
+                    <constraint firstItem="8TP-w3-JvQ" firstAttribute="leading" secondItem="ESL-xZ-ng4" secondAttribute="trailing" constant="4" id="Ebf-Iv-b9I"/>
+                    <constraint firstAttribute="trailing" secondItem="j4b-wn-rNA" secondAttribute="trailing" constant="4" id="Elf-oB-25u"/>
+                    <constraint firstItem="xX7-5N-8ju" firstAttribute="top" secondItem="Wjb-Uf-hI7" secondAttribute="top" constant="16" id="FEd-Sr-iLc"/>
+                    <constraint firstItem="YAV-kd-nbL" firstAttribute="leading" secondItem="Wjb-Uf-hI7" secondAttribute="leading" constant="8" id="ISb-to-Opv"/>
+                    <constraint firstItem="fgI-vY-4fJ" firstAttribute="leading" secondItem="Wjb-Uf-hI7" secondAttribute="leading" constant="8" id="Jne-fu-jDj"/>
+                    <constraint firstItem="j4b-wn-rNA" firstAttribute="leading" secondItem="xX7-5N-8ju" secondAttribute="trailing" constant="4" id="Ocr-8Z-WLX"/>
+                    <constraint firstItem="fgI-vY-4fJ" firstAttribute="top" secondItem="YAV-kd-nbL" secondAttribute="bottom" constant="8" id="eXc-wI-mF4"/>
+                    <constraint firstItem="j4b-wn-rNA" firstAttribute="top" secondItem="Wjb-Uf-hI7" secondAttribute="top" constant="8" id="gL4-zq-T9S"/>
+                    <constraint firstItem="8TP-w3-JvQ" firstAttribute="centerY" secondItem="fgI-vY-4fJ" secondAttribute="centerY" id="m0H-fm-pZw"/>
+                    <constraint firstItem="xX7-5N-8ju" firstAttribute="leading" secondItem="YAV-kd-nbL" secondAttribute="trailing" constant="8" id="mJN-9G-6pl"/>
+                    <constraint firstItem="YAV-kd-nbL" firstAttribute="top" secondItem="Wjb-Uf-hI7" secondAttribute="top" constant="8" id="wh1-B8-YeJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Btn_Add" destination="8TP-w3-JvQ" id="u3X-ld-ceO"/>
+                <outlet property="Btn_Discount" destination="fgI-vY-4fJ" id="DX8-9G-uhE"/>
+                <outlet property="Btn_Remove" destination="j4b-wn-rNA" id="ueQ-Ni-0xx"/>
+                <outlet property="Iv_GoodsImage" destination="YAV-kd-nbL" id="nkM-g6-J3j"/>
+                <outlet property="Lbl_GoodsName" destination="xX7-5N-8ju" id="AXV-my-2hm"/>
+                <outlet property="Lbl_Price" destination="kyb-OV-NJY" id="8FR-Ga-mZ9"/>
+                <outlet property="Tf_BuyCount" destination="ESL-xZ-ng4" id="8D6-05-0Qd"/>
+            </connections>
+            <point key="canvasLocation" x="-33.333333333333336" y="-5.6919642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close.png" width="32" height="32"/>
+    </resources>
+</document>
